@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Expense Tracker</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; max-width: 46rem; padding: 2rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1b1b1b; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #121212; } a { color: #6fd3c7; } }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; }
+  h2 { font-size: 1.25rem; margin: 2.2rem 0 .6rem; padding-top: .4rem; border-top: 1px solid #8883; }
+  h3 { font-size: 1.05rem; margin: 1.4rem 0 .4rem; }
+  .updated { color: #6b6b6b; margin: 0 0 1.6rem; }
+  @media (prefers-color-scheme: dark) { .updated { color: #9a9a9a; } }
+  table { border-collapse: collapse; width: 100%; margin: .8rem 0 1.2rem; font-size: .95rem; }
+  th, td { border: 1px solid #8883; padding: .5rem .6rem; text-align: left; vertical-align: top; }
+  th { background: #0000000d; }
+  code { background: #0000000d; padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  ul { padding-left: 1.3rem; }
+  a { color: #00695c; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Expense Tracker</h1>
+<p class="updated"><strong>Last updated:</strong> 6 November 2026</p>
+
+<p>Expense Tracker ("the app") is a personal expense-tracking application for Android.
+This policy explains what the app collects, why, where it is stored, and the choices you have.</p>
+
+<p>The app is operated by an individual developer ("we", "us").
+Contact: <strong><a href="mailto:dmitry90titov@gmail.com">dmitry90titov@gmail.com</a></strong></p>
+
+<h2>1. Information we collect</h2>
+
+<h3>Information you provide</h3>
+<table>
+  <thead><tr><th>Data</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Email address</strong></td><td>To create and sign in to your account</td></tr>
+    <tr><td><strong>Display name</strong></td><td>Shown to you and to members of groups you join</td></tr>
+    <tr><td><strong>Transactions</strong> — date, amount, currency, store name, spending sector, payment method (cash, or last 4 digits of a card)</td><td>The core function of the app</td></tr>
+    <tr><td><strong>Line items</strong> — product names, quantities and prices read from your receipts</td><td>Used for per-product statistics</td></tr>
+    <tr><td><strong>Receipt images</strong></td><td>Stored so you can retrieve a photo of a receipt later</td></tr>
+    <tr><td><strong>Cards</strong> — only the last four digits and an optional nickname you type</td><td>To let you filter spending by payment method</td></tr>
+    <tr><td><strong>Groups</strong> — group names and the accounts of members who join them</td><td>To show shared family/team totals</td></tr>
+  </tbody>
+</table>
+
+<h3>Information collected automatically</h3>
+<ul>
+  <li><strong>Account identifier</strong> — an opaque ID issued by our authentication provider</li>
+  <li><strong>Authentication tokens</strong> — stored on your device so you stay signed in</li>
+</ul>
+
+<h3>What the app does <em>not</em> collect</h3>
+<ul>
+  <li>No advertising identifiers, no ad networks, no third-party analytics or tracking SDKs</li>
+  <li>No location data</li>
+  <li>No contacts, calendar, SMS or call logs</li>
+  <li>We do not collect your full card numbers. Only the last four digits you enter.</li>
+</ul>
+
+<h2>2. Receipt scanning happens on your device</h2>
+<p>Text recognition on receipt photos is performed <strong>entirely on your device</strong> by
+Google ML Kit. The image is <strong>not</strong> sent to us or to Google for recognition.</p>
+<p>Once a receipt is recognised, the app uploads a copy of that image to our storage so you can
+view it later from any device. You can delete a transaction and its image at any time.</p>
+
+<h2>3. Where your data is stored</h2>
+<table>
+  <thead><tr><th>What</th><th>Where</th></tr></thead>
+  <tbody>
+    <tr><td>Account and transaction data</td><td>A managed PostgreSQL database in <strong>Amazon Web Services (AWS)</strong>, region <code>us-east-1</code> (United States)</td></tr>
+    <tr><td>Receipt images</td><td><strong>Amazon S3</strong> (United States), encrypted at rest, with a replica copy in <code>us-west-2</code></td></tr>
+    <tr><td>Authentication</td><td><strong>Amazon Cognito</strong></td></tr>
+    <tr><td>Local cache</td><td>On your device: the most recent <strong>three months</strong> of transactions, in an app-private database</td></tr>
+  </tbody>
+</table>
+<p>Data is encrypted in transit (HTTPS) and at rest.</p>
+<p>AWS and Google act as our <strong>service providers (data processors)</strong> and process this
+data only on our instructions.</p>
+
+<h2>4. How your data is shared</h2>
+<ul>
+  <li><strong>With members of a group you join.</strong> If you add a transaction to a group, the other members of that group can see it. Personal transactions are visible only to you. Leaving a group removes your access to its data.</li>
+  <li><strong>With service providers</strong> listed in section 3, solely to run the app.</li>
+  <li><strong>We do not sell your data</strong>, and we do not share it for advertising.</li>
+</ul>
+<p>We may disclose data if legally required to do so.</p>
+
+<h2>5. Retention and deletion</h2>
+<p>Your data is kept for as long as your account exists.</p>
+<p>To delete your account and all associated data, email
+<a href="mailto:dmitry90titov@gmail.com">dmitry90titov@gmail.com</a> from your registered address.
+We will delete your account, transactions, line items and receipt images, and will confirm when
+this is done. Deletion is normally completed within 30 days.</p>
+<p>Note that receipt images may persist in automated backups for a limited period before those
+backups expire.</p>
+
+<h2>6. Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct, export or delete your
+personal data, or to object to its processing. Contact us at the address above and we will help.
+You may also lodge a complaint with your local data-protection authority.</p>
+
+<h2>7. Children</h2>
+<p>The app is not directed to children under 13, and we do not knowingly collect data from them.
+If you believe a child has provided us with personal data, contact us and we will delete it.</p>
+
+<h2>8. Security</h2>
+<p>We use encryption in transit and at rest, least-privilege access controls, and automated
+backups. No system is perfectly secure, and we cannot guarantee absolute security.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>We may update this policy as the app changes. Material changes will be reflected in the
+"Last updated" date above and, where appropriate, announced in the app.</p>
+
+<h2>10. Contact</h2>
+<p><strong><a href="mailto:dmitry90titov@gmail.com">dmitry90titov@gmail.com</a></strong></p>
+
+</body>
+</html>
