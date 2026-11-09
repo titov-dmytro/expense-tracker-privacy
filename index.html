@@ -28,13 +28,13 @@
 <body>
 
 <h1>Privacy Policy — Expense Tracker</h1>
-<p class="updated"><strong>Last updated:</strong> 6 November 2026</p>
+<p class="updated"><strong>Last updated:</strong> 9 November 2026</p>
 
 <p>Expense Tracker ("the app") is a personal expense-tracking application for Android.
 This policy explains what the app collects, why, where it is stored, and the choices you have.</p>
 
 <p>The app is operated by an individual developer ("we", "us").
-Contact: <strong><a href="mailto:dmitry90titov@gmail.com">dmitry90titov@gmail.com</a></strong></p>
+Contact: <strong><a href="mailto:info@finappventure.com">info@finappventure.com</a></strong></p>
 
 <h2>1. Information we collect</h2>
 
@@ -67,8 +67,9 @@ Contact: <strong><a href="mailto:dmitry90titov@gmail.com">dmitry90titov@gmail.co
 </ul>
 
 <h2>2. Receipt scanning happens on your device</h2>
-<p>Text recognition on receipt photos is performed <strong>entirely on your device</strong> by
-Google ML Kit. The image is <strong>not</strong> sent to us or to Google for recognition.</p>
+<p>Text recognition on receipt photos is performed <strong>entirely on your device</strong>, by
+text-recognition software built into the app. The image is <strong>not</strong> sent to us or to
+any third party for recognition.</p>
 <p>Once a receipt is recognised, the app uploads a copy of that image to our storage so you can
 view it later from any device. You can delete a transaction and its image at any time.</p>
 
@@ -76,20 +77,23 @@ view it later from any device. You can delete a transaction and its image at any
 <table>
   <thead><tr><th>What</th><th>Where</th></tr></thead>
   <tbody>
-    <tr><td>Account and transaction data</td><td>A managed PostgreSQL database in <strong>Amazon Web Services (AWS)</strong>, region <code>us-east-1</code> (United States)</td></tr>
-    <tr><td>Receipt images</td><td><strong>Amazon S3</strong> (United States), encrypted at rest, with a replica copy in <code>us-west-2</code></td></tr>
-    <tr><td>Authentication</td><td><strong>Amazon Cognito</strong></td></tr>
+    <tr><td>Account and transaction data</td><td>A managed database on secure cloud servers located in the <strong>United States</strong></td></tr>
+    <tr><td>Receipt images</td><td>Encrypted cloud storage in the <strong>United States</strong>, with an encrypted backup copy</td></tr>
+    <tr><td>Authentication</td><td>Our authentication service provider's cloud service</td></tr>
     <tr><td>Local cache</td><td>On your device: the most recent <strong>three months</strong> of transactions, in an app-private database</td></tr>
   </tbody>
 </table>
 <p>Data is encrypted in transit (HTTPS) and at rest.</p>
-<p>AWS and Google act as our <strong>service providers (data processors)</strong> and process this
-data only on our instructions.</p>
+<p>We rely on established third-party providers for cloud hosting, managed databases, file
+storage, authentication and email delivery. They act as our <strong>service providers (data
+processors)</strong>: they may process your data only on our instructions and are bound by contract
+to protect it. We do not list every provider by name in this policy — you can ask us for the
+current list of service providers at any time (see section 10).</p>
 
 <h2>4. How your data is shared</h2>
 <ul>
   <li><strong>With members of a group you join.</strong> If you add a transaction to a group, the other members of that group can see it. Personal transactions are visible only to you. Leaving a group removes your access to its data.</li>
-  <li><strong>With service providers</strong> listed in section 3, solely to run the app.</li>
+  <li><strong>With our service providers</strong> (cloud hosting, storage, authentication and email delivery), solely to run the app.</li>
   <li><strong>We do not sell your data</strong>, and we do not share it for advertising.</li>
 </ul>
 <p>We may disclose data if legally required to do so.</p>
@@ -97,7 +101,7 @@ data only on our instructions.</p>
 <h2>5. Retention and deletion</h2>
 <p>Your data is kept for as long as your account exists.</p>
 <p>To delete your account and all associated data, email
-<a href="mailto:dmitry90titov@gmail.com">dmitry90titov@gmail.com</a> from your registered address.
+<a href="mailto:info@finappventure.com">info@finappventure.com</a> from your registered address.
 We will delete your account, transactions, line items and receipt images, and will confirm when
 this is done. Deletion is normally completed within 30 days.</p>
 <p>Note that receipt images may persist in automated backups for a limited period before those
@@ -121,7 +125,9 @@ backups. No system is perfectly secure, and we cannot guarantee absolute securit
 "Last updated" date above and, where appropriate, announced in the app.</p>
 
 <h2>10. Contact</h2>
-<p><strong><a href="mailto:dmitry90titov@gmail.com">dmitry90titov@gmail.com</a></strong></p>
+<p><strong><a href="mailto:info@finappventure.com">info@finappventure.com</a></strong></p>
+<p>You can also use this address to ask which service providers we currently use, or to exercise
+any of the rights described in section 6.</p>
 
 </body>
 </html>
